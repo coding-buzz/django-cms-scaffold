@@ -1,3 +1,5 @@
+from __future__ import unicode_literals
+
 import os
 import unittest
 import shutil
@@ -6,6 +8,8 @@ from tests.settings import BASE_DIR
 
 
 class BaseTest(unittest.TestCase):
+
+    maxDiff = None
 
     TEST_PROJECT_DIR = BASE_DIR
     TEST_APP_NAME = 'test-app'
